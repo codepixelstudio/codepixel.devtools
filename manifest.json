@@ -1,0 +1,31 @@
+{
+
+    "name": "codepixel.studio developer tools",
+
+    "description": "codepixel visual styles, in your devtools",
+
+    "version": "1.0.0",
+
+    "author": "Code Pixel Studio",
+
+    "homepage_url": "http://codepixelstudio.github.io/extensions/codepixel.devtools/",
+
+    "devtools_page": "src/devtools.html",
+
+    "icons": {
+
+        "128" : "assets/img/codepixels-128.png",
+        "48"  : "assets/img/codepixels-48.png",
+        "16"  : "assets/img/codepixels-16.png"
+
+    },
+
+    "offline_enabled": true,
+
+    "permissions": [ "activeTab" ],
+
+    "short_name": "codepixel.devtools",
+
+    "manifest_version": 2,
+
+}

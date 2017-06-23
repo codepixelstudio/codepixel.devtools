@@ -1,0 +1,30 @@
+{
+
+    "name": "codepixel.devtools",
+
+    "version": "0.0.0",
+
+    "description": "google chrome developer tools UI theme",
+
+    "repository": "https://github.com/codepixelstudio/codepixel.devtools",
+
+    "main": "src/devtools.js",
+
+    "scripts": {
+
+        "test": "echo \"Error: no test specified\" && exit 1"
+
+    },
+
+    "author": "codepixelstudio",
+
+    "license": "MIT",
+
+    "devDependencies": {
+
+        "gulp": "^3.9.1",
+        "gulp-sass": "^3.1.0"
+
+    }
+
+}

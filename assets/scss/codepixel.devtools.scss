@@ -1,0 +1,1255 @@
+// stylesheet :: codepixel.devtools styles
+
+    // import
+        @import 'utilities/utilities';
+
+    // variables
+        $brite  : hsla( 80, 76%, 53%, 1.000 );
+
+    // styles
+
+        // top-level ::shadow hook
+        ::shadow {
+
+            font: {
+
+                family: $indu-bold;
+                size: 9.5px !important;
+                weight: normal !important;
+
+            }
+
+            * {
+
+                text: {
+
+                    rendering: $pixper;
+
+                }
+
+                -webkit-font-smoothing: $anti;
+
+                border-radius: 0 !important;
+
+                border: none !important;
+
+            }
+
+            // toolbars
+            .toolbar {
+
+                background-color: lighten( $code, 3% ) !important;
+
+            }
+
+            // DOM crumbs
+            .crumbs {
+
+                min-height: 24px !important;
+                height: 24px !important;
+
+                font: {
+
+                    family: $indu-bold;
+                    size: 9.5px !important;
+                    weight: normal !important;
+
+                }
+
+                letter-spacing: 0.035em;
+
+                .crumb {
+
+                    min-height: 24px !important;
+                    height: 24px !important;
+                    padding: 0 8px 0 8px !important;
+
+                    line-height: 24px !important;
+
+                    transition: $all220;
+
+                    font: {
+
+                        family: $indu-bold;
+                        size: 9.5px !important;
+                        weight: normal !important;
+
+                    }
+
+                    &:hover {
+
+                        line-height: 24px !important;
+
+                        color: $px-orange !important;
+
+                        background-color: transparentize( $px-orange, 0.825 ) !important;
+
+                    }
+
+                    &.selected {
+
+                        line-height: 24px !important;
+
+                        color: $brite !important;
+
+                        background-color: transparentize( $brite, 0.785 ) !important;
+
+                    }
+
+                }
+
+            }
+
+            // pane tabs
+            .tabbed-pane {
+
+                margin: 0 0 0 0 !important;
+
+                border: none !important;
+
+            }
+
+            .tabbed-pane-header-contents {
+
+                margin: 0 0 0 0 !important;
+
+                // box-shadow: inset 0 1px 0 red !important;
+
+            }
+
+            .tabbed-pane-header {
+
+                margin: 0 0 0 0 !important;
+                padding: 0 !important;
+
+                border-bottom: none !important;
+
+                background-color: lighten( $code, 3% ) !important;
+
+            }
+
+            .tabbed-pane-header-tab {
+
+                border-top: none !important;
+                border-right: none !important;
+                border-bottom: none !important;
+                border-left: none !important;
+
+                font: {
+
+                    family: $indu-demi;
+                    size: 11px !important;
+                    weight: normal !important;
+
+                }
+
+                letter-spacing: 0.035em;
+
+                text: {
+
+                    align: center !important;
+                    transform: lowercase;
+                    rendering: $pixper;
+
+                }
+
+                color: transparentize( $text, 0.385 ) !important;
+
+                -webkit-font-smoothing: $anti;
+
+                background-color: transparent !important;
+                background-image: none !important;
+
+                -webkit-border-image: none !important;
+                        border-image: none !important;
+
+                transition: $all220;
+
+                &::before,
+                &::after {
+
+                    display: none !important;
+
+                }
+
+                &:hover {
+
+                    color: $px-blue !important;
+
+                }
+
+                &.selected {
+
+                    border-top: none !important;
+                    border-right: none !important;
+                    border-bottom: none !important;
+                    border-left: none !important;
+
+                    color: $brite !important;
+
+                    background-image: none !important;
+
+                    box-shadow: none !important;
+
+                    -webkit-border-image: none !important;
+                            border-image: none !important;
+
+                    &::before,
+                    &::after {
+
+                        display: none !important;
+
+                        box-shadow: none !important;
+
+                        -webkit-border-image: none !important;
+                                border-image: none !important;
+
+                    }
+
+                    .tabbed-pane-header-tab-title {
+
+                        border-top: none !important;
+                        border-right: none !important;
+                        border-bottom: none !important;
+                        border-left: none !important;
+
+                        box-shadow: none !important;
+
+                        -webkit-border-image: none !important;
+                                border-image: none !important;
+
+                        text: {
+
+                            align: center !important;
+                            transform: lowercase;
+                            rendering: $pixper;
+
+                        }
+
+                        &::before,
+                        &::after {
+
+                            box-shadow: none !important;
+
+                            // display: none !important;
+
+                        }
+
+                    }
+
+                }
+
+                .tabbed-pane-header-tab-title {
+
+                    border-top: none !important;
+                    border-right: none !important;
+                    border-bottom: none !important;
+                    border-left: none !important;
+
+                    box-shadow: none !important;
+
+                    -webkit-border-image: none !important;
+                            border-image: none !important;
+
+                }
+
+            }
+
+            .shadow-split-widget.hbox,
+            .shadow-split-widget.vbox {
+
+                > .shadow-split-widget-sidebar:not(.maximized) {
+
+                    border-top: none !important;
+                    border-left: none !important;
+
+                }
+
+            }
+
+            .webkit-html-close-tag-name,
+            .webkit-html-tag-name {
+
+                // color: #F92672 !important;
+
+            }
+
+            .cm-atom,
+            .cm-comment,
+            .cm-variable,
+            .cm-string,
+            .cm-keyword,
+            .cm-number,
+            .cm-operator,
+            .cm-error,
+            .cm-s-default .cm-property,
+            .cm-js-atom,
+            .cm-js-attribute,
+            .cm-js-builtin,
+            .cm-js-comment,
+            .cm-js-def,
+            .cm-js-error,
+            .cm-js-header,
+            .cm-js-hr,
+            .cm-js-keyword,
+            .cm-js-link,
+            .cm-js-meta,
+            .cm-js-number,
+            .section .properties .number,
+            .event-properties .number,
+            .cm-js-operator,
+            .cm-js-property,
+            .cm-js-string,
+            .cm-js-string-2,
+            .cm-js-tag,
+            .cm-js-variable,
+            .cm-js-variable-2,
+            .CodeMirror .cm-js-string,
+            .CodeMirror .cm-js-string-2,
+            .CodeMirror .cm-js-comment,
+            .cm-css-atom,
+            .cm-css-builtin,
+            .cm-css-def,
+            .cm-css-comment,
+            .cm-css-meta,
+            .cm-css-number,
+            .cm-css-operator,
+            .cm-css-property,
+            .cm-css-qualifier,
+            .cm-css-string,
+            .cm-css-string-2,
+            .cm-css-tag,
+            .cm-css-variable,
+            .cm-css-variable-2,
+            .webkit-css-selector,
+            .webkit-css-at-rule,
+            .webkit-css-color,
+            .webkit-css-comment,
+            .webkit-css-important,
+            .webkit-css-keyword,
+            .webkit-css-number,
+            .webkit-css-property,
+            .webkit-css-string,
+            .webkit-css-url,
+            .CodeMirror .cm-css-comment,
+            .CodeMirror .cm-css-string,
+            .cm-xml-comment,
+            .cm-xml-error,
+            .cm-xml-string,
+            .cm-xml-tag,
+            .cm-xml-attribute,
+            .cm-xml-link,
+            .webkit-html-attribute-name,
+            .webkit-html-attribute-value,
+            .webkit-html-comment,
+            .webkit-html-resource-link,
+            .webkit-html-external-link,
+            .webkit-html-tag,
+            .webkit-html-close-tag-name,
+            .webkit-html-tag-name,
+            .webkit-html-text-node,
+            .webkit-html-css-node,
+            .webkit-html-js-node,
+            .webkit-html-pseudo-element {
+
+                font: {
+
+                    // family: 'Roboto Mono' !important;
+                    family: $indu-demi !important;
+                    size: 9.5px !important;
+                    weight: 600 !important;
+
+                }
+
+            }
+
+        }
+
+        .toolbar {
+
+            // background-color: lighten( $code, 3% ) !important;
+            background-color: $code !important;
+
+        }
+
+        #console-messages,
+        #console-view,
+        #network-views .CodeMirror-lines,
+        #script-view-fallback,
+        .console-view-wrapper,
+        .dialog .fill,
+        .drawer .revision-history-drawer,
+        .help-window-main,
+        .panel .split-view-contents,
+        .panel,
+        .panel-enabler-view,
+        .profiles-sidebar-tree-box,
+        .resource-view .script-view,
+        .sidebar-overlay,
+        .split-view-vertical .sidebar-pane.composite .properties-tree,
+        .styles-section.read-only,
+        .tabbed-pane-content,
+        .tabbed-pane-content.has-no-tabs .timeline-records-title,
+        .timeline-records-list,
+        #timeline-overview-sidebar {
+
+            background-color: $code !important;
+
+        }
+
+        // breadcrumbs
+        #elements-crumbs {
+
+            min-height: 24px !important;
+            height: 24px !important;
+            margin: 0 0 0 0 !important;
+            padding: 0 0 0 0 !important;
+
+            border-top: none !important;
+            border-bottom: none !important;
+
+            background-color: lighten( $code, 1.5% ) !important;
+
+        }
+
+        .text-editor .inner-container .webkit-line-content,
+        .text-editor-lines .inner-container .webkit-line-number,
+        .styles-section .properties li,
+        .CodeMirror-lines,
+        #search-results-pane-file-based .search-match {
+
+            line-height: 16px !important
+
+        }
+
+        .styles-section {
+
+            padding: 16px 16px 16px 16px !important;
+
+            border-top: none !important;
+            border-bottom: none !important;
+
+            transition: $all220;
+
+            &:first-child {
+
+                border-top: none !important;
+
+            }
+
+            &:hover {
+
+                background-color: lighten( $code, 3% ) !important;
+
+            }
+
+        }
+
+        // non-shadow DOM hooks
+        input[type='checkbox'] {
+
+            border-radius: 0px !important;
+
+        }
+
+        // pane tabs
+        .tabbed-pane {
+
+            margin: 0 0 0 0 !important;
+
+            border: none !important;
+
+        }
+
+        .tabbed-pane-header-contents {
+
+            margin: 0 0 0 0 !important;
+
+            // box-shadow: inset 0 1px 0 red !important;
+
+        }
+
+        .tabbed-pane-header {
+
+            margin: 0 0 0 0 !important;
+            padding: 0 !important;
+
+            border-bottom: none !important;
+
+            background-color: lighten( $code, 3% ) !important;
+
+        }
+
+        .tabbed-pane-header-tab {
+
+            // background-color: lighten( $code, 3% ) !important;
+            background-color: transparent !important;
+
+            -webkit-border-image: none !important;
+                    border-image: none !important;
+
+            font: {
+
+                family: $indu-demi;
+                size: 11px !important;
+                weight: normal !important;
+
+            }
+
+            letter-spacing: 0.035em;
+
+            text: {
+
+                align: center !important;
+                transform: lowercase;
+                rendering: $pixper;
+
+            }
+
+            color: transparentize( $text, 0.385 ) !important;
+
+            -webkit-font-smoothing: $anti;
+
+            transition: $all220;
+
+            &::before,
+            &::after {
+
+                display: none !important;
+
+            }
+
+            &:hover {
+
+                color: $px-blue !important;
+
+            }
+
+            &.selected {
+
+                color: $brite !important;
+
+                // background-color: red !important;
+
+                box-shadow: none !important;
+
+                -webkit-border-image: none !important;
+                        border-image: none !important;
+
+                &::before,
+                &::after {
+
+                    display: none !important;
+
+                    box-shadow: none !important;
+
+                    -webkit-border-image: none !important;
+                            border-image: none !important;
+
+                }
+
+                .tabbed-pane-header-tab-title {
+
+                    box-shadow: none !important;
+
+                    -webkit-border-image: none !important;
+                            border-image: none !important;
+
+                    text: {
+
+                        align: center !important;
+                        transform: lowercase;
+                        rendering: $pixper;
+
+                    }
+
+                    &::before,
+                    &::after {
+
+                        box-shadow: none !important;
+
+                        // display: none !important;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+/**********************************************/
+/* console
+/**********************************************/
+
+  /**********************************************/
+  /* Messages
+  /**********************************************/
+
+    #console-messages {
+
+        font: {
+
+            family: $indu-demi !important;
+            size: 9.5px !important;
+            weight: normal !important;
+
+        }
+
+        background-color: $code !important;
+
+    }
+
+    #console-messages a {
+
+        font: {
+
+            family: $indu-demi !important;
+            size: 9.5px !important;
+            weight: normal !important;
+
+        }
+
+        // color: transparentize( $text, 0.125 ) !important;
+        color: red !important;
+
+    }
+
+  #console-messages a:hover {
+    color: #999 !important;
+  }
+
+    #console-messages .console-message {
+
+        border-bottom: none !important;
+
+        // color: $px-green !important;
+
+        * {
+
+            font: {
+
+                family: $indu-demi !important;
+                size: 11px !important;
+                weight: normal !important;
+
+            }
+
+            letter-spacing: 0.025em !important;
+
+        }
+
+    }
+
+  #console-messages .console-message, .console-user-command {
+    border-bottom: none !important;
+  }
+
+  #console-messages .console-user-command > .console-message-text {
+    color: #A6E22E !important;
+  }
+
+  #console-messages .console-formatted-number {
+    color: #ff73fd !important;
+  }
+
+  #console-messages .console-formatted-string {
+    color: #E6DB74 !important;
+  }
+
+  #console-messages .console-formatted-object {
+    color: #7c7c7c !important;
+  }
+
+  #console-messages .console-formatted-function {
+    color: #fff !important;
+  }
+
+  #console-messages .console-formatted-regexp {
+    color: #e9c062 !important;
+  }
+
+  #console-messages .console-group-messages .section .header .title {
+    color: #f1f1f1 !important;
+  }
+
+  #console-messages .section .properties .name, .event-properties .name {
+    color: #96cbfe !important;
+  }
+
+  @-webkit-keyframes webkit-error-level {
+    0%   { color: #f77 !important; }
+    50%  { color: #f00 !important; }
+    100% { color: #f77 !important; }
+  }
+
+  #console-messages .console-error-level .console-message-text {
+    color: #f66 !important;
+    -webkit-animation-name: webkit-error-level;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-timing-function: ease-in-out;
+  }
+
+  #console-messages .console-user-command::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OTMzNzdGNUZDMTA1MTFFMDgwRUZGQ0JCMjgzMzU0MTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OTMzNzdGNjBDMTA1MTFFMDgwRUZGQ0JCMjgzMzU0MTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5MzM3N0Y1REMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5MzM3N0Y1RUMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pia6udAAAAB5SURBVHjaYvz//z8DMYAFxli9ejWI6oByK5AVhYaGIhRCgQsQGwOxIFTxe5gEE5pCVyA+C8RpQLwbqgmrwvdQxauhis6AbMamEASUkEwCabyHTWE51BQlqBNMoDSKQhckX3dCFd3DCB4g2AP16VkoGwUwEhvgAAEGAAzQHBRSxqPRAAAAAElFTkSuQmCC) !important;
+  }
+
+  /**********************************************/
+  /* Prompt
+  /**********************************************/
+
+    #console-prompt {
+
+        // color: red !important;
+        border-bottom: none !important;
+        family: $indu-demi !important;
+        size: 9.5px !important;
+        weight: normal !important;
+
+    }
+
+  #console-prompt::before {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjRGNTc2MTZDMTA2MTFFMDgwRUZGQ0JCMjgzMzU0MTYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjRGNTc2MTdDMTA2MTFFMDgwRUZGQ0JCMjgzMzU0MTYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5MzM3N0Y2MUMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5MzM3N0Y2MkMxMDUxMUUwODBFRkZDQkIyODMzNTQxNiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Plf0eOsAAAB4SURBVHjaYvz//z8DMYAFxph+BqyhA8qtQFaUacKIUAgFLkBsDMSCUMXvYRJMaApdgfgsEKcB8W6oJqwK30MVr4YqOgPEodgUgoASkkkgjfewKSyHmqIEdYIJlEZR6ILk606oonsYwQMEe6A+PQtlowBGYgMcIMAAF2wcFPVNZx8AAAAASUVORK5CYII=) !important;
+    color: #fff !important;
+  }
+
+/**********************************************/
+/* Elements/Network
+/**********************************************/
+
+  /**********************************************/
+  /* Layout
+  /**********************************************/
+  .section > .header::before,
+  .properties-tree li.parent::before {
+    -webkit-filter: invert(1);
+  }
+
+  #storage-views .script-view,
+  #network-views .script-view,
+  #script-resource-views .script-view {
+    color: #ccc !important;
+  }
+
+  #storage-views .script-view,
+  #elements-content,
+  #network-views .text-editor-contents,
+  #script-resource-views .script-view {
+    background: $code !important;
+    // font-size: 12px !important;
+  }
+
+  #elements-content .highlight {
+    color: #f1f1f1;
+  }
+
+  #elements-content li.hovered:not(.selected) .selection {
+    background: rgba(255, 255, 255, .2) !important;
+  }
+
+  #elements-content .selection.selected {
+    z-index: 0 !important;
+  }
+
+  #elements-content ol:focus li.selected .selection {
+    background: #3F4360 !important;
+  }
+
+  #elements-content .selected .highlight {
+    position: relative;
+    z-index: 2;
+  }
+
+  #elements-content .selected {
+    background-color: #4c4d5d !important;
+  }
+
+  #elements-content .editing {
+    background-color: #242424 !important;
+  }
+
+    // selected code block
+    body /deep/ li.selected .selection,
+    body /deep/ .outline-disclosure li.selected .selection,
+    .outline-disclosure li.selected .selection {
+
+        background-color: lighten( $code, 10% ) !important;
+
+    }
+
+    .filter-bar {
+
+        border: none !important;
+
+        font: {
+
+            family: $indu-demi !important;
+            size: 9.5px !important;
+            weight: normal !important;
+
+        }
+
+        letter-spacing: 0.025em;
+
+        color: transparentize( $text, 0.325 ) !important;
+
+        background-color: lighten( $code, 2% ) !important;
+
+        input {
+
+            margin: 0;
+            padding: 0 8px 0 8px;
+
+            border: none !important;
+            border-radius: 0px !important;
+
+            font: {
+
+                family: $indu-demi !important;
+                size: 9.5px !important;
+                weight: normal !important;
+
+            }
+
+            color: red !important;
+
+            background-color: $code !important;
+
+        }
+
+    }
+
+    input {
+
+        margin: 0;
+        padding: 0 8px 0 8px;
+
+        border: none !important;
+        border-radius: 0px !important;
+
+        font: {
+
+            family: $indu-bold !important;
+            size: 9.5px !important;
+            weight: normal !important;
+
+        }
+
+        letter-spacing: 0.035em;
+
+        text: {
+
+            transform: $low;
+
+        }
+
+        color: $code-pink !important;
+
+        background-color: $code !important;
+
+    }
+
+    // styles section top-level hook
+    .styles-section {
+
+        // global styles
+        * {
+
+            font: {
+
+                family: $indu-demi !important;
+                size: 9.5px !important;
+                weight: normal !important;
+
+            }
+
+            letter-spacing: 0.025em !important;
+
+            text: {
+
+                decoration: none !important;
+
+            }
+
+        }
+
+        input[type='checkbox'] {
+
+            border-radius: 0px !important;
+
+            // -webkit-appearance: none;
+
+        }
+
+        .filter {
+
+            background-color: red !important;
+
+        }
+
+        .properties li,
+        .style-properties li,
+        .simple-selector {
+
+            &.filter-match {
+
+                background-color: $code-pink !important;
+
+            }
+
+        }
+
+    }
+
+    .selector,
+    .selector-matches {
+
+        font: {
+
+            family: $indu-bold !important;
+            size: 9.5px !important;
+            weight: 600 !important;
+
+        }
+
+        letter-spacing: 0.025em !important;
+
+    }
+
+    .selector-matches {
+
+        color: #E3B959 !important;
+
+    }
+
+    ::shadow {
+
+        input[type='checkbox'] {
+
+            border-radius: 0px !important;
+
+            -webkit-appearance: none;
+
+            display: inline-block;
+
+            width: 12px !important;
+            height: 12px !important;
+            margin: 0 2px 0 0  !important;
+
+            background-color: transparentize( red, 0.825 ) !important;
+
+            &:before {
+
+                content: '\eb38' !important;
+
+                color: red !important;
+
+            }
+
+            &:checked {
+
+                background-color: transparentize( $px-green, 0.825 ) !important;
+
+                &:before {
+
+                    content: '\eb3d' !important;
+
+                    color: $px-green !important;
+
+                }
+
+            }
+
+            &:disabled {
+
+                background-color: transparentize( red, 0.825 ) !important;
+
+                &:before {
+
+                    content: '\eb3c' !important;
+
+                    color: red !important;
+
+                }
+
+            }
+
+            &:before {
+
+                display: inline-block !important;
+
+                width: 12px !important;
+                height: 12px !important;
+                margin: 0 !important;
+                padding: 0 !important;
+
+                font: {
+
+                    family: 'codicons' !important;
+                    size: 8px !important;
+                    weight: normal !important;
+
+                }
+
+                text: {
+
+                    align: center !important;
+
+                }
+
+            }
+
+        }
+
+        .tree-outline li.odd-row+.children li,
+        .tree-outline li.odd-row {
+
+            background-color: lighten( $code, 1% ) !important;
+
+        }
+
+        .selector-matches {
+
+            font: {
+
+                family: $indu-bold !important;
+                size: 9.5px !important;
+                weight: 600 !important;
+
+            }
+
+            letter-spacing: 0.025em !important;
+
+            color: red !important;
+
+        }
+
+        .webkit-css-property,
+        .value {
+
+            // display: inline-block !important;
+
+            // padding-right: 2px !important;
+
+        }
+
+        .webkit-css-property {
+
+            font: {
+
+                family: $indu-bold !important;
+                size: 9.5px !important;
+                weight: 600 !important;
+
+            }
+
+            letter-spacing: 0.025em !important;
+
+            color: #6AEDFF !important;
+
+        }
+
+        .value {
+
+            font: {
+
+                family: $indu-demi !important;
+                size: 9.5px !important;
+                weight: normal !important;
+
+            }
+
+            letter-spacing: 0.025em !important;
+
+            text: {
+
+                decoration: none !important;
+
+            }
+
+            color: transparentize( $text, 0.105 ) !important;
+
+            a {
+
+                text-decoration: none !important;
+
+            }
+
+        }
+
+        .webkit-css-string {
+
+            font: {
+
+                family: $indu-bold !important;
+                size: 9.5px !important;
+                weight: 600 !important;
+
+            }
+
+            text: {
+
+                // decoration: none !important;
+
+            }
+
+            -webkit-font-smoothing: $anti;
+
+            color: #e3b959 !important;
+
+        }
+
+    }
+
+  ::shadow .webkit-css-url {
+
+      text: {
+
+        //   decoration: none !important;
+
+      }
+
+      -webkit-font-smoothing: $anti;
+
+      color: #e3b959 !important;
+
+  }
+
+  ::shadow .CodeMirror .cm-css-comment {
+      color: #676767 !important;
+      font-style: italic
+  }
+
+  ::shadow .CodeMirror .cm-css-string {
+
+
+      -webkit-font-smoothing: $anti;
+
+      color: #e3b959 !important;
+
+  }
+
+  ::shadow .cm-xml-comment {
+      color: #7c7c7c !important;
+      font-style: italic !important
+  }
+
+  ::shadow .cm-xml-error {
+      color: #bf4c4c !important
+  }
+
+  ::shadow .cm-xml-string {
+      color: #f0874f !important
+  }
+
+  ::shadow .cm-xml-tag {
+      color: #49a6d2 !important
+  }
+
+  ::shadow .cm-xml-attribute {
+      color: #88aed5 !important
+  }
+
+  ::shadow .cm-xml-link {
+      color: #e3b959 !important
+  }
+
+  ::shadow .webkit-html-attribute-name {
+      color: #a6e22e !important
+  }
+
+  ::shadow .webkit-html-attribute-value {
+      color: #e6db74 !important
+  }
+
+  ::shadow .webkit-html-comment {
+      color: #7c7c7c !important;
+      font-style: italic
+  }
+
+    ::shadow {
+
+        .webkit-html-tag {
+
+            color: white !important;
+
+        }
+
+        .webkit-html-tag-name,
+        .webkit-html-close-tag-name {
+
+            color: $code-pink !important;
+
+        }
+
+        .webkit-html-close-tag-name::first-letter {
+
+            color: yellow !important;
+
+        }
+
+        .webkit-html-text-node,
+        .webkit-html-css-node,
+        .webkit-html-js-node {
+
+            color: #c2c3c3 !important
+
+        }
+
+        .webkit-html-pseudo-element {
+
+            color: #49a5d2 !important
+
+        }
+
+    }
+
+  .popover .parent+.children.expanded,
+  #console-messages .parent+.children.expanded,
+  .sidebar-pane .parent:not(.event-category)+.children.expanded {
+      border-left: 1px dashed rgba(204, 204, 204, 0.2) !important;
+      position: relative;
+      left: 4.4px
+  }
+
+  .monospace::shadow .object-value-string,
+  .CodeMirror-line::shadow .object-value-string {
+      color: #ff8737 !important
+  }
+
+  .monospace::shadow .object-value-regexp,
+  .CodeMirror-line::shadow .object-value-regexp {
+      color: #ff54e8 !important
+  }
+
+  .monospace::shadow .object-value-symbol,
+  .CodeMirror-line::shadow .object-value-symbol {
+      color: #ff54e8 !important
+  }
+
+  .monospace .cm-xml-comment,
+  .CodeMirror-line .cm-xml-comment {
+      color: #7c7c7c !important
+  }
+
+  .monospace .cm-xml-string,
+  .CodeMirror-line .cm-xml-string {
+      color: #f0874f !important
+  }
+
+  #console-messages .cm-js-string {
+      color: #f07b3c !important
+  }
+
+  #console-messages .cm-js-string-2 {
+      color: #ff54e8 !important
+  }
+
+  #console-messages .object-value-function-prefix {
+      color: #8b6ccf !important
+  }
+
+  ::shadow .object-value-function-prefix {
+      color: #8b6ccf !important
+  }

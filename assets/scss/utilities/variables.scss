@@ -1,0 +1,91 @@
+// stylesheet: global variables
+
+	// fonts
+
+		// Industry
+			$indu-font: 'industrybook';
+			$indu-demi: 'industrydemi';
+			$indu-semi: 'industrymedium';
+			$indu-bold: 'industrybold';
+
+		// Roboto
+			$roboto   : 'RobotoMono';
+
+		// Centima Mono
+			$centima  : 'Centima Mono';
+
+	// colors
+
+		// codepixels
+
+			// base
+				$code  		: #151B1E;
+				$bar 		: #232829;
+				$text 		: #C3D1E4;
+
+			// highlights
+				$glow 		: #90BB22;
+				$select     : #A6E22E;
+				$blue 		: #30B9F8;
+
+			// brand
+				$px-green   : #00FE6D;
+				$px-blue    : #30B9F8;
+				$px-pink    : #DB1B89;
+				$px-orange  : #F46231;
+				$px-purple  : #0E446E;
+				$px-yellow  : #F9EC32;
+
+			// syntax
+				$code-pink  : #F92672;
+
+		// randoms
+
+			// social media
+				$twitter 	: #00ACED;
+				$facebook 	: #3B5998;
+				$googleplus : #DD4B39;
+				$pinterest 	: #CB2027;
+				$linkedin 	: #007BB6;
+				$youtube 	: #BB0000;
+				$vimeo 		: #AAD450;
+				$tumblr 	: #32506D;
+				$instagram 	: #517FA4;
+				$plickr 	: #F40072;
+				$blickr 	: #1B56D1;
+
+			// customs
+				$hot-yellow : #C4D82E;
+				$iron 		: #CCCCCC;
+				$charcoal 	: #666666;
+				$steel 		: #545454;
+				$oil        : #333333;
+				$proper 	: #141414;
+				$canvas 	: #111111;
+				$campaign   : #97CA3D;
+				$admin		: #23282D;
+				$wp 		: #0073AA;
+				$lights		: #F1F1F1;
+				$jumbo 		: #888888;
+				$hotstuff 	: #1D3732;
+
+	// utilities
+
+		// special FX filters
+			$blur 	: blur(10px);
+
+		// common typography  settings
+			$up 	 : uppercase;
+			$low 	 : lowercase;
+
+			$pixper  : geometricPrecision;
+			$optimus : optimizeLegibility;
+
+			$subant	 : subpixel-antialiased;
+			$anti 	 : antialiased;
+
+			$webfont : -webkit-font-smoothing;
+
+		// transition hover states
+			$all160 : all 160ms linear 0ms;
+			$all220 : all 220ms linear 0ms;

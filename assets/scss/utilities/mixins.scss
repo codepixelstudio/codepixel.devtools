@@ -1,0 +1,125 @@
+// stylesheet: mixins and constants
+
+	// ----- FONTS ----- //
+
+		// Roboto Mono
+			@font-face {
+                
+			    font-family: 'RobotoMono';
+			        src: url('assets/fonts/roboto/RobotoMono-Regular.ttf') format('truetype');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'RobotoBold';
+			        src: url('assets/fonts/roboto/RobotoMono-Bold.ttf') format('truetype');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'RobotoDemi';
+			        src: url('assets/fonts/roboto/RobotoMono-Medium.ttf') format('truetype');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+		// Industry
+			@font-face {
+
+			    font-family: 'industrybold';
+			    	src: url('assets/fonts/industry/Industry-Bold-webfont.eot');
+			    	src: url('assets/fonts/industry/Industry-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+			        	 url('assets/fonts/industry/Industry-Bold-webfont.woff') format('woff'),
+			        	 url('assets/fonts/industry/Industry-Bold-webfont.ttf') format('truetype'),
+			        	 url('assets/fonts/industry/Industry-Bold-webfont.svg#industrybold') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'industrybook';
+			    	src: url('assets/fonts/industry/Industry-Book-webfont.eot');
+			    	src: url('assets/fonts/industry/Industry-Book-webfont.eot?#iefix') format('embedded-opentype'),
+			        	 url('assets/fonts/industry/Industry-Book-webfont.woff') format('woff'),
+			        	 url('assets/fonts/industry/Industry-Book-webfont.ttf') format('truetype'),
+			        	 url('assets/fonts/industry/Industry-Book-webfont.svg#industrybook') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'wickedmedium';
+			    	src: url('assets/fonts/industry/Industry-Medium-webfont.eot');
+			    	src: url('assets/fonts/industry/Industry-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+			        	 url('assets/fonts/industry/Industry-Medium-webfont.woff') format('woff'),
+			        	 url('assets/fonts/industry/Industry-Medium-webfont.ttf') format('truetype'),
+			        	 url('assets/fonts/industry/Industry-Medium-webfont.svg#industrymedium') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'industrydemi';
+			    	src: url('assets/fonts/industry/Industry-Demi-webfont.eot');
+			    	src: url('assets/fonts/industry/Industry-Demi-webfont.eot?#iefix') format('embedded-opentype'),
+			        	 url('assets/fonts/industry/Industry-Demi-webfont.woff') format('woff'),
+			        	 url('assets/fonts/industry/Industry-Demi-webfont.ttf') format('truetype'),
+			        	 url('assets/fonts/industry/Industry-Demi-webfont.svg#industrydemi') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+
+			    font-family: 'industrylight';
+			    	src: url('assets/fonts/industry/Industry-Light-webfont.eot');
+			    	src: url('assets/fonts/industry/Industry-Light-webfont.eot?#iefix') format('embedded-opentype'),
+			        	 url('assets/fonts/industry/Industry-Light-webfont.woff') format('woff'),
+			        	 url('assets/fonts/industry/Industry-Light-webfont.ttf') format('truetype'),
+			        	 url('assets/fonts/industry/Industry-Light-webfont.svg#industrylight') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'industrydemi_italic';
+				    src: url('assets/fonts/industry/Industry-DemiItalic-webfont.eot');
+				    src: url('assets/fonts/industry/Industry-DemiItalic-webfont.eot?#iefix') format('embedded-opentype'),
+			         url('assets/fonts/industry/Industry-DemiItalic-webfont.woff2') format('woff2'),
+			         url('assets/fonts/industry/Industry-DemiItalic-webfont.woff') format('woff'),
+			         url('assets/fonts/industry/Industry-DemiItalic-webfont.ttf') format('truetype'),
+			         url('assets/fonts/industry/Industry-DemiItalic-webfont.svg#industrydemi_italic') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}
+
+			@font-face {
+			    
+			    font-family: 'industrybold_italic';
+			    	src: url('assets/fonts/industry/Industry-BoldItalic-webfont.eot');
+			    	src: url('assets/fonts/industry/Industry-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+			         url('assets/fonts/industry/Industry-BoldItalic-webfont.woff2') format('woff2'),
+			         url('assets/fonts/industry/Industry-BoldItalic-webfont.woff') format('woff'),
+			         url('assets/fonts/industry/Industry-BoldItalic-webfont.ttf') format('truetype'),
+			         url('assets/fonts/industry/Industry-BoldItalic-webfont.svg#industrybold_italic') format('svg');
+			    font-weight: normal;
+			    font-style: normal;
+
+			}

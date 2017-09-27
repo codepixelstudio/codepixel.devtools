@@ -71,6 +71,11 @@
 
 	// utilities
 
+		// scrollbar defaults
+			$def-scroll : transparent;
+			$def-thumb  : transparentize( white, 0.925 );
+			$def-track  : transparentize( white, 0.925 );
+
 		// special FX filters
 			$blur 	: blur(10px);
 
@@ -85,6 +90,9 @@
 			$anti 	 : antialiased;
 
 			$webfont : -webkit-font-smoothing;
+
+		// easing animations
+			$outex : cubic-bezier( 0.19, 1, 0.22, 1 );
 
 		// transition hover states
 			$all160 : all 160ms linear 0ms;

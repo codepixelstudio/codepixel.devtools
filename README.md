@@ -14,7 +14,7 @@ If you're here, on Github, reading about an extension that customizes Chrome's D
 
 * Especially extensions like this one.
 
-Ergo, future Chrome updates will absolutely break some of the theme's code. When that happens, I'll get around to updating the CSS files whenever I god damn feel like it. If this timeline doesn't work for you, feel free to clone/download the repo and have at it using the gulpfile contained therein, or modify shit to use your own SCSS compiling setup.
+Ergo, future Chrome updates will absolutely break some of the theme's code. When that happens, I'll get around to updating the CSS files whenever I god damn feel like it. If this timeline doesn't work for you, feel free to clone/download the repo and have at it using the gulpfile contained therein, or modify shit to use your own SCSS compiling setup. Or don't. What the fuck do I care.
 
 Someday, I'll get around to tidying up every line of SCSS, actually maintaining the repo, and providing some better documentation, or at least documentation that's less condescending and rude.
 
